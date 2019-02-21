@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+    const tmp = d3.select("body")
+        .selectAll("p")
+        .data([4, 8, 15, 16, 23, 42])
+        .enter()
+        .append("p")
+        .text(function(d) { return "I’m number " + d + "!"; });
+    console.log(tmp);
+</script>
+</body>
+</html>
