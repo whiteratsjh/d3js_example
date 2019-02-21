@@ -2,7 +2,7 @@
 <head>
   <title>D3 in Action Chapter 11 - Example 3</title>
   <meta charset="utf-8" />
-<script src="d3.v3.min.js" type="text/JavaScript"></script>
+<script src="/d3.v3.min.js" type="text/JavaScript"></script>
 </head>
 <style>
 body, html {
@@ -66,7 +66,7 @@ circle.xy {
     return datapoint;
   })
   
-  d3.json("world.geojson", function(data) {createMap(data)});
+  d3.json("/world.geojson", function(data) {createMap(data)});
 
   function createMap(countries) {
     projection = d3.geo.mercator().scale(100).translate([250,250]);

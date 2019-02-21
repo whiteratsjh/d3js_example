@@ -2,10 +2,10 @@
 <head>
   <title>D3 in Action Chapter 7 - Example 5</title>
   <meta charset="utf-8" />
-<script src="d3.v3.min.js" type="text/JavaScript"></script>
-<script src="colorbrewer.js" type="text/JavaScript"></script>
-<script src="queue.js" type="text/JavaScript"></script>
-<script src="d3.geo.projection.min.js" type="text/JavaScript"></script>
+<script src="/d3.v3.min.js" type="text/JavaScript"></script>
+<script src="/colorbrewer.js" type="text/JavaScript"></script>
+<script src="/queue.js" type="text/JavaScript"></script>
+<script src="/d3.geo.projection.min.js" type="text/JavaScript"></script>
 </head>
 <style>
   svg {
@@ -34,8 +34,8 @@
     
 <script>
      queue()
-    .defer(d3.json, "world.geojson")
-    .defer(d3.csv, "cities.csv")
+    .defer(d3.json, "/world.geojson")
+    .defer(d3.csv, "/cities.csv")
     .await(function(error, file1, file2) { createMap(file1, file2); });
     
   function createMap(countries, cities) {

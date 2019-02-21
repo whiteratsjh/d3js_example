@@ -2,9 +2,9 @@
 <head>
   <title>D3 in Action Chapter 7 - Example 1</title>
   <meta charset="utf-8" />
-<script src="d3.v3.min.js" type="text/JavaScript"></script>
-<script src="colorbrewer.js" type="text/JavaScript"></script>
-<script src="queue.js" type="text/JavaScript"></script>
+<script src="/d3.v3.min.js" type="text/JavaScript"></script>
+<script src="/colorbrewer.js" type="text/JavaScript"></script>
+<script src="/queue.js" type="text/JavaScript"></script>
 </head>
 <style>
   svg {
@@ -32,7 +32,7 @@
   <footer>
     
 <script>
-  d3.json("world.geojson", createMap);
+  d3.json("/world.geojson", createMap);
   
   function createMap(countries) {
     var aProjection = d3.geo.mercator();

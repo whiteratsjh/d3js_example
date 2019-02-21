@@ -1,0 +1,20 @@
+<html>
+<head>
+
+</head>
+<body>
+<ul id="ulFiles">
+</ul>
+<script src="/https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    axios.get("/files").then(pResponse=>{
+        pResponse.data.forEach(pFile => {
+            if(pFile !== "index.html") {
+                let vHtml = `<li><a href="/example/${pFile.replace(".html","")}">${pFile}</a></li>`
+                document.querySelector("#ulFiles").innerHTML += vHtml;
+            }
+        });
+    })
+</script>
+</body>
+</html>
