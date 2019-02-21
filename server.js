@@ -7,7 +7,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
-app.get('/:page', (req,res) => {
+app.get('/express/:page', (req,res) => {
    res.render(`${req.path.replace("/","")}.html`);
 });
 
