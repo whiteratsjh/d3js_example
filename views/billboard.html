@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://naver.github.io/billboard.js/release/latest/dist/billboard.min.css"/>
+</head>
+<body>
+<div id="chart"></div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://naver.github.io/billboard.js/release/latest/dist/billboard.min.js"></script>
+<script>
+    let chart = bb.generate({
+        bindto: "#chart",
+        data: {
+            type: "bar",
+            columns: [
+                ["data1", 30, 200, 100, 170, 150, 250],
+                ["data2", 130, 100, 140, 35, 110, 50]
+            ]
+        }
+    });
+</script>
+</body>
+</html>
