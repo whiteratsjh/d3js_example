@@ -55,7 +55,7 @@ img.infinite {
   <footer>
     
 <script>
-d3.json("tweets.json",function(error,data) { createSpreadsheet(data.tweets)});
+d3.json("/tweets.json",function(error,data) { createSpreadsheet(data.tweets)});
       
       function createSpreadsheet(incData) {
         

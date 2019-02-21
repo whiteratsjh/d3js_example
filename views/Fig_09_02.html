@@ -52,7 +52,7 @@ stroke-width: 1px;
       redraw();
   }
   
-  d3.json("tweets.json",function(error,data) {main(data.tweets)});
+  d3.json("/tweets.json",function(error,data) {main(data.tweets)});
 
 //  d3.selectAll("svg").append("rect").attr("width", 100).attr("height", 100);
 

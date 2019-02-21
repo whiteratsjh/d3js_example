@@ -113,7 +113,7 @@ path.domain {
     d3.selectAll("div.datarow").style("background", "white");    
   }
   
-  d3.json("tweets.json",function(error,data) {main(data.tweets)});
+  d3.json("/tweets.json",function(error,data) {main(data.tweets)});
 
   function main(incData) {
     
